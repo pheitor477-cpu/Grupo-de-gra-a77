@@ -1,0 +1,398 @@
+/* =========================================
+   CONFIGURAÇÕES GERAIS
+========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --background: #07090d;
+    --background-secondary: #0d1118;
+    --card: #11161f;
+    --card-hover: #161d28;
+    --text: #ffffff;
+    --text-secondary: #a8b0bd;
+    --primary: #229ed9;
+    --primary-hover: #38b7f2;
+    --border: rgba(255, 255, 255, 0.08);
+    --radius: 18px;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Inter", sans-serif;
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.6;
+}
+/* =========================================
+   BARRA SUPERIOR
+========================================= */
+.top-bar {
+    width: 100%;
+    padding: 13px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    background: linear-gradient(
+        90deg,
+        #12628a,
+        #229ed9,
+        #12628a
+    );
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+.top-bar i {
+    font-size: 14px;
+}
+/* =========================================
+   HERO
+========================================= */
+.hero {
+    min-height: 680px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 20px 90px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background:
+        radial-gradient(
+            circle at 50% 20%,
+            rgba(34, 158, 217, 0.16),
+            transparent 40%
+        ),
+        var(--background);
+}
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: rgba(34, 158, 217, 0.08);
+    filter: blur(100px);
+    border-radius: 50%;
+    pointer-events: none;
+}
+.hero-content {
+    max-width: 850px;
+    position: relative;
+    z-index: 2;
+}
+/* =========================================
+   BADGE
+========================================= */
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 14px;
+    margin-bottom: 25px;
+    border: 1px solid rgba(34, 158, 217, 0.3);
+    border-radius: 50px;
+    background: rgba(34, 158, 217, 0.08);
+    color: #6ac8f2;
+    font-size: 13px;
+    font-weight: 600;
+}
+.status-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #36d399;
+    box-shadow: 0 0 10px rgba(54, 211, 153, 0.8);
+}
+/* =========================================
+   TÍTULO
+========================================= */
+.hero h1 {
+    font-size: clamp(42px, 7vw, 76px);
+    line-height: 1.05;
+    letter-spacing: -3px;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+.hero h1 span {
+    display: block;
+    background: linear-gradient(
+        90deg,
+        #229ed9,
+        #72d3ff
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+/* =========================================
+   DESCRIÇÃO
+========================================= */
+.hero-description {
+    max-width: 650px;
+    margin: 0 auto 35px;
+    color: var(--text-secondary);
+    font-size: 18px;
+    line-height: 1.8;
+}
+/* =========================================
+   BOTÃO CTA
+========================================= */
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    min-height: 62px;
+    padding: 0 28px;
+    border-radius: 12px;
+    background: var(--primary);
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 0.3px;
+    box-shadow:
+        0 10px 35px rgba(34, 158, 217, 0.25);
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease,
+        box-shadow 0.25s ease;
+}
+.cta-button:hover {
+    background: var(--primary-hover);
+    transform: translateY(-3px) scale(1.02);
+    box-shadow:
+        0 15px 45px rgba(34, 158, 217, 0.4);
+}
+.cta-button:active {
+    transform: translateY(0) scale(0.98);
+}
+.cta-button i:first-child {
+    font-size: 22px;
+}
+.cta-button i:last-child {
+    font-size: 13px;
+}
+/* =========================================
+   TEXTO DO CTA
+========================================= */
+.cta-note {
+    margin-top: 15px;
+    color: #727b89;
+    font-size: 12px;
+}
+.cta-note i {
+    margin-right: 5px;
+    color: #36d399;
+}
+/* =========================================
+   BENEFÍCIOS
+========================================= */
+.benefits {
+    padding: 100px 20px;
+    background: var(--background-secondary);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+.section-header {
+    max-width: 650px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+.section-label {
+    display: inline-block;
+    margin-bottom: 12px;
+    color: #229ed9;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+.section-header h2 {
+    font-size: clamp(32px, 5vw, 48px);
+    line-height: 1.15;
+    letter-spacing: -1.5px;
+    margin-bottom: 15px;
+}
+.section-header p {
+    color: var(--text-secondary);
+    font-size: 16px;
+}
+/* =========================================
+   CARDS
+========================================= */
+.cards {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+.card {
+    padding: 32px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        border-color 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-7px);
+    background: var(--card-hover);
+    border-color:
+        rgba(34, 158, 217, 0.3);
+}
+.icon-box {
+    width: 52px;
+    height: 52px;
+    margin-bottom: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    background: rgba(34, 158, 217, 0.12);
+    color: #38b7f2;
+    font-size: 21px;
+}
+.card h3 {
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+.card p {
+    color: var(--text-secondary);
+    font-size: 14px;
+    line-height: 1.7;
+}
+/* =========================================
+   CTA FINAL
+========================================= */
+.final-cta {
+    padding: 110px 20px;
+    text-align: center;
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(34, 158, 217, 0.1),
+            transparent 50%
+        );
+}
+.final-content {
+    max-width: 650px;
+    margin: auto;
+}
+.final-icon {
+    width: 65px;
+    height: 65px;
+    margin: 0 auto 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    background: rgba(34, 158, 217, 0.12);
+    color: #38b7f2;
+    font-size: 25px;
+}
+.final-content h2 {
+    font-size: clamp(30px, 5vw, 48px);
+    margin-bottom: 15px;
+    letter-spacing: -1px;
+}
+.final-content p {
+    color: var(--text-secondary);
+    margin-bottom: 30px;
+}
+.secondary {
+    background: transparent;
+    border: 1px solid rgba(34, 158, 217, 0.5);
+    box-shadow: none;
+}
+.secondary:hover {
+    background: var(--primary);
+    border-color: var(--primary);
+}
+/* =========================================
+   FOOTER
+========================================= */
+footer {
+    padding: 25px 20px;
+    border-top: 1px solid var(--border);
+    text-align: center;
+    color: #626b78;
+    font-size: 12px;
+}
+/* =========================================
+   TABLETS
+========================================= */
+@media (max-width: 800px) {
+    .hero {
+        min-height: 600px;
+        padding-top: 80px;
+        padding-bottom: 70px;
+    }
+    .cards {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+    }
+    .card {
+        padding: 28px;
+    }
+}
+/* =========================================
+   CELULARES
+========================================= */
+@media (max-width: 500px) {
+    .top-bar {
+        padding: 11px 15px;
+        font-size: 10px;
+        letter-spacing: 0.3px;
+    }
+    .hero {
+        padding: 70px 18px;
+    }
+    .hero h1 {
+        font-size: 43px;
+        letter-spacing: -2px;
+    }
+    .hero-description {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+    .cta-button {
+        width: 100%;
+        padding: 0 18px;
+        font-size: 13px;
+    }
+    .benefits {
+        padding: 75px 18px;
+    }
+    .section-header {
+        margin-bottom: 35px;
+    }
+    .section-header h2 {
+        font-size: 34px;
+    }
+    .card {
+        padding: 25px;
+    }
+    .final-cta {
+        padding: 80px 18px;
+    }
+}
+/* =========================================
+   ACESSIBILIDADE
+========================================= */
+.cta-button:focus-visible {
+    outline: 3px solid #ffffff;
+    outline-offset: 4px;
+}
+a {
+    -webkit-tap-highlight-color: transparent;
+}
