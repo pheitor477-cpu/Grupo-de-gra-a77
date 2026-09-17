@@ -15,75 +15,75 @@
     --text-secondary: #a8b0bd;
     --primary: #229ed9;
     --primary-hover: #38b7f2;
-    --border: rgba(255, 255, 255, 0.08);
-    --radius: 18px;
+    --border: rgba (255, 255, 255, 0.08);
+    --radius: 18 px;
 }
 html {
     scroll-behavior: smooth;
 }
 body {
     font-family: "Inter", sans-serif;
-    background: var(--background);
-    color: var(--text);
+    background: var (--background);
+    color: var (--text);
     line-height: 1.6;
 }
 /* =========================================
    BARRA SUPERIOR
 ========================================= */
 .top-bar {
-    width: 100%;
-    padding: 13px 20px;
+    width: 100 %;
+    padding: 13 px 20 px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 9px;
-    background: linear-gradient(
-        90deg,
+    gap: 9 px;
+    background: linear-gradient (
+        90 deg,
         #12628a,
         #229ed9,
         #12628a
     );
     color: #ffffff;
-    font-size: 13px;
+    font-size: 13 px;
     font-weight: 800;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.5 px;
     text-align: center;
 }
 .top-bar i {
-    font-size: 14px;
+    font-size: 14 px;
 }
 /* =========================================
    HERO
 ========================================= */
 .hero {
-    min-height: 680px;
+    min-height: 680 px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 100px 20px 90px;
+    padding: 100 px 20 px 90 px;
     text-align: center;
     position: relative;
     overflow: hidden;
     background:
-        radial-gradient(
-            circle at 50% 20%,
-            rgba(34, 158, 217, 0.16),
-            transparent 40%
+        radial-gradient (
+            circle at 50 % 20 %,
+            rgba (34, 158, 217, 0.16),
+            transparent 40 %
         ),
-        var(--background);
+        var (--background);
 }
 .hero::before {
     content: "";
     position: absolute;
-    width: 500px;
-    height: 500px;
-    background: rgba(34, 158, 217, 0.08);
-    filter: blur(100px);
-    border-radius: 50%;
+    width: 500 px;
+    height: 500 px;
+    background: rgba (34, 158, 217, 0.08);
+    filter: blur (100 px);
+    border-radius: 50 n%;
     pointer-events: none;
 }
 .hero-content {
-    max-width: 850px;
+    max-width: 850 px ;
     position: relative;
     z-index: 2;
 }
@@ -93,37 +93,37 @@ body {
 .badge {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
-    padding: 8px 14px;
-    margin-bottom: 25px;
-    border: 1px solid rgba(34, 158, 217, 0.3);
-    border-radius: 50px;
-    background: rgba(34, 158, 217, 0.08);
+    gap: 8 px;
+    padding: 8 px 14 px;
+    margin-bottom: 25 px;
+    border: 1 px solid rgba (34, 158, 217, 0.3);
+    border-radius: 50 px;
+    background: rgba (34, 158, 217, 0.08);
     color: #6ac8f2;
-    font-size: 13px;
+    font-size: 13 px;
     font-weight: 600;
 }
 .status-dot {
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
+    width: 7 px;
+    height: 7 px;
+    border-radius: 50 %;
     background: #36d399;
-    box-shadow: 0 0 10px rgba(54, 211, 153, 0.8);
+    box-shadow: 0 0 10 px rgba (54, 211, 153, 0.8);
 }
 /* =========================================
    TÍTULO
 ========================================= */
 .hero h1 {
-    font-size: clamp(42px, 7vw, 76px);
+    font-size: clamp (42 px, 7 vw, 76 px);
     line-height: 1.05;
-    letter-spacing: -3px;
+    letter-spacing: -3 px;
     font-weight: 800;
-    margin-bottom: 25px;
+    margin-bottom: 25 px;
 }
 .hero h1 span {
     display: block;
-    background: linear-gradient(
-        90deg,
+    background: linear-gradient (
+        90 deg,
         #229ed9,
         #72d3ff
     );
@@ -135,10 +135,10 @@ body {
    DESCRIÇÃO
 ========================================= */
 .hero-description {
-    max-width: 650px;
-    margin: 0 auto 35px;
-    color: var(--text-secondary);
-    font-size: 18px;
+    max-width: 650 px;
+    margin: 0 auto 35 px;
+    color: var (--text-secondary);
+    font-size: 18 px;
     line-height: 1.8;
 }
 /* =========================================
@@ -148,250 +148,250 @@ body {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 12px;
-    min-height: 62px;
-    padding: 0 28px;
-    border-radius: 12px;
-    background: var(--primary);
+    gap: 12 px;
+    min-height: 62 px;
+    padding: 0 28 px;
+    border-radius: 12 px;
+    background: var (--primary);
     color: #ffffff;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 15 px;
     font-weight: 800;
-    letter-spacing: 0.3px;
+    letter-spacing: 0.3 px;
     box-shadow:
-        0 10px 35px rgba(34, 158, 217, 0.25);
+        0 10 px 35 px rgba (34, 158, 217, 0.25);
     transition:
-        transform 0.25s ease,
-        background 0.25s ease,
-        box-shadow 0.25s ease;
+        transform 0.25 s ease,
+        background 0.25 s ease,
+        box-shadow 0.25 s ease;
 }
 .cta-button:hover {
-    background: var(--primary-hover);
-    transform: translateY(-3px) scale(1.02);
+    background: var (--primary-hover);
+    transform: translateY (-3 px) scale (1.02);
     box-shadow:
-        0 15px 45px rgba(34, 158, 217, 0.4);
+        0 15 px 45 px rgba (34, 158, 217, 0.4);
 }
 .cta-button:active {
-    transform: translateY(0) scale(0.98);
+    transform: translateY (0) scale (0.98);
 }
 .cta-button i:first-child {
-    font-size: 22px;
+    font-size: 22 px;
 }
 .cta-button i:last-child {
-    font-size: 13px;
+    font-size: 13 px;
 }
 /* =========================================
    TEXTO DO CTA
 ========================================= */
 .cta-note {
-    margin-top: 15px;
+    margin-top: 15 px;
     color: #727b89;
-    font-size: 12px;
+    font-size: 12 px;
 }
 .cta-note i {
-    margin-right: 5px;
+    margin-right: 5 px;
     color: #36d399;
 }
 /* =========================================
    BENEFÍCIOS
 ========================================= */
 .benefits {
-    padding: 100px 20px;
-    background: var(--background-secondary);
-    border-top: 1px solid var(--border);
-    border-bottom: 1px solid var(--border);
+    padding: 100 px 20 px;
+    background: var (--background-secondary);
+    border-top: 1 px solid var (--border);
+    border-bottom: 1 px solid var (--border);
 }
 .section-header {
-    max-width: 650px;
-    margin: 0 auto 55px;
+    max-width: 650 px;
+    margin: 0 auto 55 px;
     text-align: center;
 }
 .section-label {
     display: inline-block;
-    margin-bottom: 12px;
+    margin-bottom: 12 px;
     color: #229ed9;
-    font-size: 12px;
+    font-size: 12 px;
     font-weight: 800;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.5 px;
 }
 .section-header h2 {
-    font-size: clamp(32px, 5vw, 48px);
+    font-size: clamp  (32 px, 5 vw, 48 px);
     line-height: 1.15;
-    letter-spacing: -1.5px;
-    margin-bottom: 15px;
+    letter-spacing: -1.5 px;
+    margin-bottom: 15 px;
 }
 .section-header p {
-    color: var(--text-secondary);
-    font-size: 16px;
+    color: var (--text-secondary);
+    font-size: 16 px;
 }
 /* =========================================
    CARDS
 ========================================= */
 .cards {
-    max-width: 1100px;
+    max-width: 1100 px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 22px;
+    grid-template-columns: repeat (3, 1 fr);
+    gap: 22 px;
 }
 .card {
-    padding: 32px;
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
+    padding: 32 px;
+    background: var (--card);
+    border: 1 px solid var (--border);
+    border-radius: var (--radius);
     transition:
-        transform 0.3s ease,
-        background 0.3s ease,
-        border-color 0.3s ease;
+        transform 0.3 s ease,
+        background 0.3 s ease,
+        border-color 0.3 s ease;
 }
 .card:hover {
-    transform: translateY(-7px);
-    background: var(--card-hover);
+    transform: translateY (-7 px);
+    background: var (--card-hover);
     border-color:
-        rgba(34, 158, 217, 0.3);
+        rgba (34, 158, 217, 0.3);
 }
 .icon-box {
-    width: 52px;
-    height: 52px;
-    margin-bottom: 22px;
+    width: 52 px;
+    height: 52 px;
+    margin-bottom: 22 px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 14px;
-    background: rgba(34, 158, 217, 0.12);
+    border-radius: 14 px;
+    background: rgba (34, 158, 217, 0.12);
     color: #38b7f2;
-    font-size: 21px;
+    font-size: 21 px;
 }
 .card h3 {
-    font-size: 19px;
-    margin-bottom: 10px;
+    font-size: 19 px;
+    margin-bottom: 10 px;
 }
 .card p {
-    color: var(--text-secondary);
-    font-size: 14px;
+    color: var (--text-secondary);
+    font-size: 14 px;
     line-height: 1.7;
 }
 /* =========================================
    CTA FINAL
 ========================================= */
 .final-cta {
-    padding: 110px 20px;
+    padding: 110 px 20 px;
     text-align: center;
     background:
-        radial-gradient(
+        radial-gradient (
             circle at center,
-            rgba(34, 158, 217, 0.1),
-            transparent 50%
+            rgba (34, 158, 217, 0.1),
+            transparent 50 %
         );
 }
 .final-content {
-    max-width: 650px;
+    max-width: 650 px;
     margin: auto;
 }
 .final-icon {
-    width: 65px;
-    height: 65px;
-    margin: 0 auto 25px;
+    width: 65 px;
+    height: 65 px;
+    margin: 0 auto 25 px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 18px;
-    background: rgba(34, 158, 217, 0.12);
+    border-radius: 18 px;
+    background: rgba (34, 158, 217, 0.12);
     color: #38b7f2;
-    font-size: 25px;
+    font-size: 25 px;
 }
 .final-content h2 {
-    font-size: clamp(30px, 5vw, 48px);
-    margin-bottom: 15px;
-    letter-spacing: -1px;
+    font-size: clamp (30 px, 5 vw, 48 px);
+    margin-bottom: 15 px;
+    letter-spacing: -1 px;
 }
 .final-content p {
-    color: var(--text-secondary);
-    margin-bottom: 30px;
+    color: var (--text-secondary);
+    margin-bottom: 30 px;
 }
 .secondary {
     background: transparent;
-    border: 1px solid rgba(34, 158, 217, 0.5);
+    border: 1 px solid rgba (34, 158, 217, 0.5);
     box-shadow: none;
 }
 .secondary:hover {
-    background: var(--primary);
-    border-color: var(--primary);
+    background: var  (--primary);
+    border-color: var (--primary);
 }
 /* =========================================
    FOOTER
 ========================================= */
 footer {
-    padding: 25px 20px;
-    border-top: 1px solid var(--border);
+    padding: 25 px 20 px;
+    border-top: 1 px solid var (--border);
     text-align: center;
     color: #626b78;
-    font-size: 12px;
+    font-size: 12 px;
 }
 /* =========================================
    TABLETS
 ========================================= */
-@media (max-width: 800px) {
+@media (max-width: 800 px) {
     .hero {
-        min-height: 600px;
-        padding-top: 80px;
-        padding-bottom: 70px;
+        min-height: 600 px;
+        padding-top: 80 px;
+        padding-bottom: 70 px;
     }
     .cards {
-        grid-template-columns: 1fr;
-        max-width: 600px;
+        grid-template-columns: 1 fr;
+        max-width: 600 px;
     }
     .card {
-        padding: 28px;
+        padding: 28 px;
     }
 }
 /* =========================================
    CELULARES
 ========================================= */
-@media (max-width: 500px) {
+@media (max-width: 500 px) {
     .top-bar {
-        padding: 11px 15px;
-        font-size: 10px;
-        letter-spacing: 0.3px;
+        padding: 11 px 15 px;
+        font-size: 10 px;
+        letter-spacing: 0.3 px;
     }
     .hero {
-        padding: 70px 18px;
+        padding: 70 px 18 px;
     }
     .hero h1 {
-        font-size: 43px;
-        letter-spacing: -2px;
+        font-size: 43 px;
+        letter-spacing: -2 px;
     }
     .hero-description {
-        font-size: 15px;
+        font-size: 15 px;
         line-height: 1.7;
     }
     .cta-button {
-        width: 100%;
-        padding: 0 18px;
-        font-size: 13px;
+        width: 100 %;
+        padding: 0 18 px;
+        font-size: 13 px;
     }
     .benefits {
-        padding: 75px 18px;
+        padding: 75 px 18 px;
     }
     .section-header {
-        margin-bottom: 35px;
+        margin-bottom: 35 px;
     }
     .section-header h2 {
-        font-size: 34px;
+        font-size: 34 px;
     }
     .card {
-        padding: 25px;
+        padding: 25 px;
     }
     .final-cta {
-        padding: 80px 18px;
+        padding: 80 px 18 px;
     }
 }
 /* =========================================
    ACESSIBILIDADE
 ========================================= */
 .cta-button:focus-visible {
-    outline: 3px solid #ffffff;
-    outline-offset: 4px;
+    outline: 3 px solid #ffffff;
+    outline-offset: 4 px;
 }
 a {
     -webkit-tap-highlight-color: transparent;
