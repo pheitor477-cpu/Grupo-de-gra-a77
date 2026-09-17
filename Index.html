@@ -85,6 +85,49 @@
                   <p style="color: #ff0000;">100% confiança</p> 
                     6 anos no mercado vem no certo
                 </p>
+                <style>
+  /* Estilização principal do botão */
+  .btn-piscar-vermelho {
+    display: inline-block;
+    padding: 12 px 28 px;
+    font-family: Arial, sans-serif;
+    font-size: 16 px;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 6 px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 4 px 10 px rgba (0, 0, 0, 0.2);
+    
+    /* Aplicação da animação: nome, duração, tipo e repetição infinita */
+    animation: piscarVermelho 1.2 s ease-in-out infinite;
+    transition: transform 0.2 s ease;
+  }
+
+  /* Efeito de iluminação/aumento ao passar o mouse */
+  .btn-piscar-vermelho:hover {
+    transform: scale (1.05);
+  }
+
+  /* Animação CSS para alternar os tons de vermelho e o brilho */
+  @ keyframes piscarVermelho {
+    0 %, 100 % {
+      background-color: #ff0000; /* Vermelho vivo */
+      box-shadow: 0 0 12 px rgba (255, 0, 0, 0.8);
+    }
+    50 % {
+      background-color: #8b0000; /* Vermelho escuro */
+      box-shadow: 0 0 2 px rgba (139, 0, 0, 0.3);
+    }
+  }
+</style>
+
+<!-- Elemento HTML do botão -->
+<a href="https://chat.whatsapp.com/ECKPp7zdiLU40tRaeHb74e?s=cl&p=i&mlu=4&ilr=4 " class="btn-piscar-vermelho" target="_blank">
+  CLIQUE AQUI
+</a>
 
 
                 <!-- BOTÃO PRINCIPAL -->
