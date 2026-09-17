@@ -1,36 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-  <style>
-    body {
-      text-align: center;
-    }
-  </style>
-</head>
 
 <head>
 
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta
         name="description"
         content="Entre gratuitamente para nossa comunidade e tenha acesso a conteúdos exclusivos, networking e avisos em tempo real."
     >
-  <style>
-    <body> {
-    text-aling: center;
-    max-width: 600 px;
-    margin: 0 auto;
-    padding: 20 px;
-    front-family: sans-serif;
-    } </body>
-  </style>
 
     <title>GRUPO UNIAO.JETTA7 | Comunidade exclusiva</title>
 
-    <!-- Google Fonts -->
+
+    <!-- GOOGLE FONTS -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link
@@ -38,261 +26,519 @@
         rel="stylesheet"
     >
 
-    <!-- Font Awesome -->
+
+    <!-- FONT AWESOME -->
+
     <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     >
 
-    <!-- CSS -->
+
+    <!-- SEU CSS EXTERNO -->
+
     <link rel="stylesheet" href="styles.css">
+
+
+    <!-- ==============================
+         CSS DO BOTÃO PERSONALIZADO
+         ============================== -->
+
+    <style>
+
+        body {
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            font-family: 'Inter', Arial, sans-serif;
+        }
+
+
+        /* BOTÃO VERMELHO PERSONALIZADO */
+
+        .btn-piscar-vermelho {
+
+            display: inline-block;
+
+            padding: 15px 35px;
+
+            margin: 18px 0;
+
+            background: #ff0000;
+
+            color: #ffffff;
+
+            font-family: Arial, sans-serif;
+
+            font-size: 18px;
+
+            font-weight: 800;
+
+            text-decoration: none;
+
+            text-align: center;
+
+            border-radius: 50px;
+
+            border: 2px solid #ff0000;
+
+            cursor: pointer;
+
+            box-shadow:
+                0 0 10px rgba(255, 0, 0, 0.6),
+                0 0 25px rgba(255, 0, 0, 0.4);
+
+            animation: pulsarVermelho 1.2s infinite;
+
+            transition: all 0.2s ease;
+
+        }
+
+
+        /* EFEITO AO PASSAR O MOUSE */
+
+        .btn-piscar-vermelho:hover {
+
+            transform: scale(1.08);
+
+            background: #cc0000;
+
+            box-shadow:
+                0 0 15px rgba(255, 0, 0, 0.8),
+                0 0 40px rgba(255, 0, 0, 0.6);
+
+        }
+
+
+        /* ANIMAÇÃO */
+
+        @keyframes pulsarVermelho {
+
+            0% {
+
+                transform: scale(1);
+
+                background-color: #ff0000;
+
+                box-shadow:
+                    0 0 10px rgba(255, 0, 0, 0.6),
+                    0 0 25px rgba(255, 0, 0, 0.4);
+
+            }
+
+            50% {
+
+                transform: scale(1.06);
+
+                background-color: #8b0000;
+
+                box-shadow:
+                    0 0 20px rgba(255, 0, 0, 0.9),
+                    0 0 45px rgba(255, 0, 0, 0.7);
+
+            }
+
+            100% {
+
+                transform: scale(1);
+
+                background-color: #ff0000;
+
+                box-shadow:
+                    0 0 10px rgba(255, 0, 0, 0.6),
+                    0 0 25px rgba(255, 0, 0, 0.4);
+
+            }
+
+        }
+
+
+        /* TEXTO VERMELHO */
+
+        .vermelho {
+
+            color: #ff0000;
+
+            font-weight: 700;
+
+        }
+
+
+        /* IMAGEM */
+
+        .imagem-grupo {
+
+            max-width: 100%;
+
+            height: auto;
+
+            border-radius: 15px;
+
+            display: block;
+
+            margin: 20px auto;
+
+        }
+
+    </style>
+
 </head>
+
 
 <body>
 
-    <!-- BARRA DE AVISO -->
+
+    <!-- =================================
+         BARRA DE AVISO
+         ================================= -->
+
     <div class="top-bar">
+
         <i class="fa-solid fa-bolt"></i>
 
         <span>
-           <p style=">VAGAS LIMITADAS | UNIAOJETTA7</p 
+            VAGAS LIMITADAS | UNIAOJETTA7
         </span>
+
     </div>
 
 
-    <!-- CONTEÚDO PRINCIPAL -->
+
+    <!-- =================================
+         CONTEÚDO PRINCIPAL
+         ================================= -->
+
     <main>
 
-        <!-- HERO -->
+
+        <!-- =================================
+             HERO
+             ================================= -->
+
         <section class="hero">
 
             <div class="hero-content">
 
+
+                <!-- BADGE -->
+
                 <div class="badge">
+
                     <span class="status-dot"></span>
-                    <p style="">FAÇA PARTE DO TIME</p 
+
+                    <span>
+                        FAÇA PARTE DO TIME
+                    </span>
+
                 </div>
 
+
+
+                <!-- TÍTULO -->
+
                 <h1>
-                    
-                  <p style="color: #ff0000;">DEIXE DE SER DURO</p  DEIXE DE SER DURO
-                    <span>metodos exclusivos</span>
-                    
+
+                    <span class="vermelho">
+                        DEIXE DE SER DURO
+                    </span>
+
+                    <br>
+
+                    <span>
+                        Métodos exclusivos
+                    </span>
+
                 </h1>
 
+
+
+                <!-- DESCRIÇÃO -->
+
                 <p class="hero-description">
-                    Nossa equipe e sem enrolação 
-                  <p style="color: #ff0000;">100% confiança</p> 
-                    6 anos no mercado vem no certo
+
+                    Nossa equipe é sem enrolação.
+
+                    <span class="vermelho">
+                        100% confiança
+                    </span>
+
+                    6 anos no mercado, vem no certo.
+
                 </p>
-                <style>
-  /* Estilização principal do botão */
-  .btn-piscar-vermelho {
-    display: inline-block;
-    padding: 12 px 28 px;
-    font-family: Arial, sans-serif;
-    font-size: 16 px;
-    font-weight: bold;
-    color: #ffffff;
-    text-decoration: none;
-    border-radius: 6 px;
-    border: none;
-    cursor: pointer;
-    text-align: center;
-    box-shadow: 0 4 px 10 px rgba (0, 0, 0, 0.2);
-    
-    /* Aplicação da animação: nome, duração, tipo e repetição infinita */
-    animation: piscarVermelho 1.2 s ease-in-out infinite;
-    transition: transform 0.2 s ease;
-  }
-
-  /* Efeito de iluminação/aumento ao passar o mouse */
-  .btn-piscar-vermelho:hover {
-    transform: scale (1.05);
-  }
-
-  /* Animação CSS para alternar os tons de vermelho e o brilho */
-  @ keyframes piscarVermelho {
-    0 %, 100 % {
-      background-color: #ff0000; /* Vermelho vivo */
-      box-shadow: 0 0 12 px rgba (255, 0, 0, 0.8);
-    }
-    50 % {
-      background-color: #8b0000; /* Vermelho escuro */
-      box-shadow: 0 0 2 px rgba (139, 0, 0, 0.3);
-    }
-  }
-</style>
-
-<!-- Elemento HTML do botão -->
-<a href="https://chat.whatsapp.com/ECKPp7zdiLU40tRaeHb74e?s=cl&p=i&mlu=4&ilr=4 " class="btn-piscar-vermelho" target="_blank">
-  CLIQUE AQUI
-</a>
 
 
-                <!-- BOTÃO PRINCIPAL -->
-                <!-- LINK DO SEU GRUPO DO WHATSAPP -->
+
+                <!-- =================================
+                     BOTÃO PERSONALIZADO
+                     ================================= -->
+
+                <a
+                    href="https://chat.whatsapp.com/ECKPp7zdiLU40tRaeHb74e?s=cl&p=i&mlu=4&ilr=4"
+                    class="btn-piscar-vermelho"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+
+                    🔥 CLIQUE AQUI
+
+                </a>
+
+
+
+                <!-- =================================
+                     BOTÃO PRINCIPAL
+                     ================================= -->
+
                 <a
                     href="https://chat.whatsapp.com/ECKPp7zdiLU40tRaeHb74e?s=cl&p=i&mlu=4&ilr=4"
                     class="cta-button"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
+
                     <i class="fa-brands fa-whatsapp"></i>
 
-                    <span><a href="https://chat.whatsapp.com/ECKPp7zdiLU40tRaeHb74e?s=cl&p=i&mlu=4&ilr=4" class="
-
-#FF0000">
-    🔥 UNIAOJETTA7
-</a></span>
+                    <span>
+                        🔥 UNIAOJETTA7
+                    </span>
 
                     <i class="fa-solid fa-arrow-right"></i>
+
                 </a>
 
+
+
+                <!-- AVISO -->
+
                 <p class="cta-note">
+
                     <i class="fa-solid fa-lock"></i>
+
                     +de 10 mil vendidos
+
                 </p>
+
 
             </div>
 
         </section>
 
 
-        <!-- BENEFÍCIOS -->
+
+        <!-- =================================
+             BENEFÍCIOS
+             ================================= -->
+
         <section class="benefits">
 
-            <div class="section-header">
-            <head>
-                <body> 
-                <header>
-                        <img src="https://i.ibb.co/jkhdqfLt/IMG-1943.jpg" alt="e o 7">
-                </header>
-                </body>
-            </head>
-                
 
-       
+            <div class="section-header">
+
+
+                <!-- IMAGEM -->
+
+                <header>
+
+                    <img
+                        src="https://i.ibb.co/jkhdqfLt/IMG-1943.jpg"
+                        alt="UNIAOJETTA7"
+                        class="imagem-grupo"
+                    >
+
+                </header>
+
+
+
+                <!-- TÍTULO -->
 
                 <h2>
-                    entre em contato.‼️
+                    Entre em contato.‼️
                 </h2>
+
+
 
                 <p>
                     Veja o que você pode encontrar dentro da nossa comunidade.
                 </p>
 
+
             </div>
 
 
+
+            <!-- =================================
+                 CARDS
+                 ================================= -->
+
             <div class="cards">
 
+
                 <!-- CARD 1 -->
+
                 <article class="card">
 
                     <div class="icon-box">
+
                         <i class="fa-solid fa-gem"></i>
+
                     </div>
+
 
                     <h3>
                         Conteúdo Exclusivo‼️
                     </h3>
 
+
                     <p>
+
                         Receba conteúdos, materiais e informações
                         selecionadas especialmente para os membros.
+
                     </p>
 
                 </article>
 
 
+
                 <!-- CARD 2 -->
+
                 <article class="card">
 
                     <div class="icon-box">
+
                         <i class="fa-solid fa-users"></i>
+
                     </div>
+
 
                     <h3>
                         Networking‼️
                     </h3>
 
+
                     <p>
+
                         Conecte-se com outras pessoas, compartilhe
                         experiências e amplie sua rede de contatos.
+
                     </p>
 
                 </article>
 
 
+
                 <!-- CARD 3 -->
+
                 <article class="card">
 
                     <div class="icon-box">
+
                         <i class="fa-solid fa-bell"></i>
+
                     </div>
+
 
                     <h3>
                         Avisos em Tempo Real‼️
                     </h3>
 
+
                     <p>
+
                         Receba novidades e atualizações importantes
                         diretamente no grupo.
+
                     </p>
 
                 </article>
+
 
             </div>
 
         </section>
 
 
-        <!-- CTA FINAL -->
+
+        <!-- =================================
+             CTA FINAL
+             ================================= -->
+
         <section class="final-cta">
 
             <div class="final-content">
 
+
+                <!-- ÍCONE -->
+
                 <div class="final-icon">
+
                     <i class="fa-brands fa-whatsapp"></i>
+
                 </div>
+
+
+
+                <!-- TÍTULO -->
 
                 <h2>
                     CHEGA DE PERDER TEMPO‼️
                 </h2>
 
+
+
+                <!-- TEXTO -->
+
                 <p>
+
                     Junte-se à comunidade gratuitamente e comece
                     a aproveitar os benefícios.
+
                 </p>
 
 
-                <!-- MESMO LINK DO SEU GRUPO -->
+
+                <!-- BOTÃO FINAL -->
+
                 <a
                     href="https://chat.whatsapp.com/ECKPp7zdiLU40tRaeHb74e?s=cl&p=i&mlu=4&ilr=4"
                     class="cta-button secondary"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
+
                     <i class="fa-brands fa-whatsapp"></i>
+
                     ENTRAR AGORA
+
                 </a>
+
 
             </div>
 
         </section>
 
+
     </main>
 
 
-    <!-- FOOTER -->
+
+    <!-- =================================
+         FOOTER
+         ================================= -->
+
     <footer>
 
         <p>
-            © 2026 Sua Comunidade. Todos os direitos reservados.
+
+            © 2026 UNIAOJETTA7.
+            Todos os direitos reservados.
+
         </p>
 
     </footer>
 
+
 </body>
+
 </html>
